@@ -201,12 +201,12 @@
   margin-right: 3vw;
   }
 
-  .button a {color: white;}
+  #btn-container-mobile-2 .button a {color: white;}
+  #btn-container-mobile .button a { color: #212529;}
 
   #btn-container-mobile .button,
   #btn-container-mobile .filter {
   background: rgba(0,0,0,0.8);
-  color: rgba(0,0,0,0);
   }
 
   #btn-container-mobile .button {
