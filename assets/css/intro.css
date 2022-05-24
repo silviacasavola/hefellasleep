@@ -1,0 +1,245 @@
+@media screen and (min-width: 992px) {
+  img {
+    position: fixed;
+    width: 40vw;
+    left: 50%;
+    top: 45%;
+    transform:translate(-50%, -50%);
+    z-index: 100;
+
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+      font-family: 'Archivo', sans-serif;
+      text-transform: uppercase;
+  }
+
+  .animation-container {
+    position: absolute;
+    vertical-align: center;
+    top: 0  ;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgba(203,218,255,1) 100%);
+  }
+
+  .animation-container span {
+    position: absolute;
+    color: whitesmoke;
+    display: block;
+
+    text-align: center;
+    text-shadow: 0 0 10px grey;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+
+
+    will-change: transform, opacity;
+    animation-timing-function: ease-out;
+    animation-name: move;
+  }
+
+  @keyframes move {
+    0% {
+      opacity: 0;
+      top: 100%;
+
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      transform: none;
+    }
+  }
+
+  #enter-container {
+    position: fixed;
+    left: 47%;
+    bottom: 30vh;
+    font-size: 1.3vw;
+    z-index: 100;
+    transform:translate(-50%, 0);
+  }
+
+  #enter-frame {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    background: rgba(0,0,0,0.4);
+    color: rgba(0,0,0,0);
+    padding: 1vw;
+    position: absolute;
+    left: 0;
+    border-radius: 30px;
+  }
+
+  #enter {
+    position: absolute;
+    left: 0;
+    padding: 1vw;
+  }
+
+  a, a:focus, a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+body:hover img {
+      -webkit-animation: blur 1s linear forwards;
+      -moz-animation: blur 1s linear forwards;
+      animation: blur 1s linear forwards;
+      animation-fill-mode: forwards;
+  }
+
+
+  @-moz-keyframes blur {
+   0% { -moz-filter:blur(20px); }
+    100% { -moz-filter:blur(0px); }
+  }
+
+  @-webkit-keyframes blur  {
+   0% { -webkit-filter:blur(20px); }
+    100% { -webkit-filter:blur(0px); }
+  }
+
+  @keyframes blur {
+   0% { filter:blur(20px); }
+  100% { filter:blur(0px); }
+  }
+}
+
+
+
+@media screen and (max-width: 991px) {
+  img {
+    position: fixed;
+    width: 90vw;
+    left: 50%;
+    top: 45%;
+    transform:translate(-50%, -50%);
+    z-index: 100;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Archivo', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .animation-container {
+    position: absolute;
+    vertical-align: center;
+    top: 0  ;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .animation-container span {
+    position: absolute;
+    color: whitesmoke;
+    display: block;
+
+    text-align: center;
+    text-shadow: 0 0 10px grey;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+
+    will-change: transform, opacity;
+    animation-timing-function: ease-out;
+    animation-name: move;
+  }
+
+  @keyframes move {
+    0% {
+      opacity: 0;
+      top: 100%;
+
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      transform: none;
+    }
+  }
+
+  #enter-container {
+    position: fixed;
+    left: 40%;
+    bottom: 40vh;
+    font-size: 4.3vw;
+    z-index: 100;
+    transform:translate(-100%, 0);
+  }
+
+  #enter-frame {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    background: rgba(0,0,0,0.4);
+    color: rgba(0,0,0,0);
+    padding: 4vw;
+    position: absolute;
+    left: 0;
+    border-radius: 25px;
+  }
+
+  #enter {
+    position: absolute;
+    left: 0;
+    padding: 4vw;
+  }
+
+  a, a:focus, a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+body:hover img {
+      -webkit-animation: blur 1s linear forwards;
+      -moz-animation: blur 1s linear forwards;
+      animation: blur 1s linear forwards;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+  }
