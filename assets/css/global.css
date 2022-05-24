@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Serif+Display:ital,wght@1,300&display=swap');
+
+:root {
+/* MARGINS */
+  --margin: 1vw;
+
+  --medium-text: 1.3vw;
+
+/* --threadlink: #003D1F; */
+--threadlink: #1F0079;
+--drawinglink: #97DE00;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+font-family: 'Archivo', sans-serif;
+line-height: 1.1;
+-webkit-user-select: none;
+}
+
+.text-extralarge {
+  font-size: 2vw;
+}
+
+.medium-text {
+  font-size: 1.3vw;
+}
+
+.small-text {
+  font-size: 1.2vw;
+}
+
+#text-column {
+  font-weight: 500;
+  margin: var(--margin);
+   /* text-shadow: 0 0 5px rgba(0,0,0,0.8); */
+   text-shadow:0px 0px 4px #000;
+}
+
+#logo {
+  position: fixed;
+  top: var(--margin);
+  right: var(--margin);
+}
+
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #212529;
+}
+
+
+/* CURSOR */
+.zzz {
+    animation-name: zzz;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: forwards;
+    color: rgba(0,0,0,1);
+    font-weight: light;
+    position: absolute;
+    z-index: 100;
+    transform: translateY(100%);
+    font-family: 'Archivio', sans-serif;
+}
+
+.zzz-z {
+    animation-delay: 0s;
+    right: 10px;
+}
+.zzz-zz {
+    animation-delay: 0.5s;
+    right: -20px;
+}
+.zzz-zzz {
+    animation-delay: 1s;
+    right: 0;
+}
+
+
+@-webkit-keyframes zzz {
+	0% {
+        color: rgba(0,0,0,0);
+        font-size: 10px;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        color: rgba(0,0,0,1);
+        font-size: 15px;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes zzz {
+    0% {
+        color: rgba(0,0,0,0);
+        font-size: 10px;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        color: rgba(0,0,0,1);
+        font-size: 15px;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
+
+.hidden {
+  display: none;
+}
