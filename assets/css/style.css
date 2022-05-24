@@ -223,7 +223,7 @@
   }
 
 .filter div {
-  margin-right: 10vw;
   padding: 4vw 4vw 4vw 4vw;
+  display: inline-block;
 }
 }
