@@ -22,6 +22,8 @@
     <!-- Computer stylesheet -->
     <link rel='stylesheet' type='text/css' href='assets/css/global.css'>
     <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+    <!-- <link rel='stylesheet' type='text/css' href='assets/css/mobile.css' media="screen and (orientation:portrait) and (max-width:991px)"> -->
+
 
   </head>
 
@@ -29,7 +31,7 @@
     <body>
 
 <!-- LOGO  -->
-<img id="logo" src="assets/img/logo.png">
+<div id=logo-container><img id="logo" src="assets/img/logo.png"></div>
 
 <!-- MENU -->
 <div id="btn-container" class="btn-container col-sm-3">
@@ -200,8 +202,50 @@ lo. Suocero e suocera se ne vanno passandomi davanti senza salutarmi. In giardin
 </main>
 
 
+<!-- FILTERS MOBILE -->
+<div id="btn-container-mobile" class="btn-container-mobile">
+
+  <div class="row" id="filters">
+  <div class="filter"><br><br><br></div>
+  </div>
+
+  <br>
+
+<div class="row justify-content-between">
+<div class="button col-4 filterbutton" style="float:right">FILTER</div>
+<div class="button col-4" style="float:left"><a href="about.html">ABOUT</a></div>
+</div>
+
+</div>
+
+<div id="btn-container-mobile-2" class="btn-container-mobile"style="width: 100%">
+
+<div class="row">
+<div class="filter" id="filters">
+  <div><a id="famous-filter" class="filter-link">Famous people</a><br>
+  <a id="giulietta-filter" class="filter-link">Giulietta Masina</a><br>
+  <a id="death-filter" class="filter-link">Death</a><br>
+  <a id="birth-filter" class="filter-link">Birth</a></div>
+  <div><a id="movies-filter" class="filter-link">Movies</a><br>
+  <a id="places-filter" class="filter-link">Places</a><br>
+  <a id="betrayal-filter" class="filter-link">Betrayal</a><br>
+  <a id="reset-filter" class="filter-link">Reset</a></div>
+</div>
+</div>
+
+<br>
+
+<div class="row justify-content-between">
+<div class="button col-4 filterbutton" style="float:right">FILTER</div>
+<div class="button col-4" style="float:left"><a href="about.html">ABOUT</a></div>
+</div>
+
+</div>
+
+
+
 <!-- AUTOSCROLL -->
-<script type="text/javascript" src="./assets/js/autoscroll.js"></script>
+<!-- <script type="text/javascript" src="./assets/js/autoscroll.js"></script> -->
 
 <!-- HYPERTEXTUAL JUMP -->
 <script type="text/javascript" src="./assets/js/hypertext.js"></script>

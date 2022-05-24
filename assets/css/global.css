@@ -19,18 +19,13 @@ body {
 font-family: 'Archivo', sans-serif;
 line-height: 1.1;
 -webkit-user-select: none;
+overflow-x: hidden;
+max-width: 100%;
 }
 
-.text-extralarge {
-  font-size: 2vw;
-}
-
-.medium-text {
-  font-size: 1.3vw;
-}
-
-.small-text {
-  font-size: 1.2vw;
+#logo {
+  position: fixed;
+  top: var(--margin);
 }
 
 #text-column {
@@ -40,11 +35,7 @@ line-height: 1.1;
    text-shadow:0px 0px 4px #000;
 }
 
-#logo {
-  position: fixed;
-  top: var(--margin);
-  right: var(--margin);
-}
+
 
 a, a:hover {
   text-decoration: none;
@@ -113,6 +104,56 @@ a, a:hover {
 }
 
 
-.hidden {
-  display: none;
+
+@media screen and (min-width: 992px) {
+
+.text-extralarge {
+  font-size: 2vw;
+}
+
+.medium-text {
+  font-size: 1.3vw;
+}
+
+.small-text {
+  font-size: 1.2vw;
+}
+
+  #logo {
+    right: var(--margin);
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+.text-extralarge {
+  font-size: 5vw;
+}
+
+.medium-text {
+  font-size: 5vw;
+}
+
+.small-text {
+  font-size: 1.2vw;
+}
+
+#text-column {
+  margin: 2vw;
+}
+
+#logo-container {
+  width: 100%;
+  height: 20vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#logo {
+  height: 10vh;
+  left: 50%;
+  transform:translate(-50%,0);
+  margin: var(--margin);
+}
 }
