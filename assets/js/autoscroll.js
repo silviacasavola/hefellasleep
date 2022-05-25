@@ -35,8 +35,20 @@ document.addEventListener('mouseup', e => {
 
 $(".thread-link").click(function () {
 a=0
-setTimeout(keepScrolling,5000)
+setTimeout(keepScrolling,3000)
 });
+
+document.addEventListener('touchstart', e => {
+    a=0
+    });
+document.addEventListener('touchend', e => {
+      setTimeout(keepScrolling,1000)
+
+      });
+document.addEventListener('touchmove', e => {
+        a=0
+        setTimeout(keepScrolling,1000)
+        });
 
  function keepScrolling(){
    a=1
