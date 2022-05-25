@@ -17,6 +17,8 @@ filteropen = false;
 // FAMOUS
 document.getElementById('famous-filter').addEventListener('click', displayFamous);
 document.getElementById('famous-filter').addEventListener('touchstart', displayFamous);
+document.getElementById('famous-filter').addEventListener('touchend', displayFamous);
+document.getElementById('famous-filter').addEventListener('touchdown', displayFamous);
 
 function displayFamous() {
 $(".dream").css("display", "none");
