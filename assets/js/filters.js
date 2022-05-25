@@ -12,14 +12,18 @@ filteropen = false;
 }
 });
 
-$( "#famous-filter" ).click(function() {
+document.getElementById('famous-filter').addEventListener('click', displayFamous);
+document.getElementById('famous-filter').addEventListener('touchstart', displayFamous);
+
+
+function displayFamous() {
 $(".dream").css("display", "none");
 $(".famous-text").css("display", "block");
 $(".filter-link").removeClass("filter-active");
 $("#famous-filter").addClass("filter-active");
 
 scrolltotop();
-})
+}
 
 $( "#giulietta-filter" ).click(function() {
 $(".dream").css("display", "none");
