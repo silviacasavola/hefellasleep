@@ -32,6 +32,12 @@ document.addEventListener('mouseup', e => {
     a=0
     setTimeout(keepScrolling,1000)
     });
+
+$(".thread-link").click(function () {
+a=0
+setTimeout(keepScrolling,5000)
+});
+
  function keepScrolling(){
    a=1
  }
