@@ -4,18 +4,14 @@ let i;
 
 let giulietta = $(".giulietta-link");
 
-// for (i = 1; i <= giulietta.length; i++) {
-  // giulietta = giulietta[i];
-  giulietta.click(function() {
-  // console.log($(this).index())
+giulietta.click(function() {
 
   i = Math.floor(Math.random() * giulietta.length )
-  console.log(i)
 
   $('html, body').animate({
-  scrollTop: giulietta[i]
+  scrollTop: $(giulietta[i]).offset().top
 })
-console.log("sono giulietta")
+$(giulietta[i]).addClass("hypertextanimation")
 })
 
 
@@ -25,9 +21,9 @@ let death = $(".death-link");
   death.click(function() {
   i = Math.floor(Math.random() * death.length )
   $('html, body').animate({
-  scrollTop: death[i]
+  scrollTop: $(death[i]).offset().top
 })
-console.log("sono la morte")
+$(death[i]).addClass("hypertextanimation")
 })
 
 
@@ -37,9 +33,9 @@ let birth = $(".birth-link");
   birth.click(function() {
   i = Math.floor(Math.random() * birth.length )
   $('html, body').animate({
-  scrollTop: birth[i]
+  scrollTop: $(birth[i]).offset().top
 })
-console.log("sono rinata")
+$(birth[i]).addClass("hypertextanimation")
 })
 
 
@@ -47,11 +43,11 @@ console.log("sono rinata")
 let movies = $(".movies-link");
 
   movies.click(function() {
-  i = Math.floor(Math.random() * movies.length ) 
+  i = Math.floor(Math.random() * movies.length )
   $('html, body').animate({
-  scrollTop: movies[i]
+  scrollTop: $(movies[i]).offset().top
 })
-console.log("sono un film")
+$(movies[i]).addClass("hypertextanimation")
 })
 
 
@@ -59,11 +55,11 @@ console.log("sono un film")
 let places = $(".places-link");
 
   places.click(function() {
-  i = Math.floor(Math.random() * places.length ) 
+  i = Math.floor(Math.random() * places.length )
   $('html, body').animate({
-  scrollTop: places[i]
+  scrollTop: $(places[i]).offset().top
 })
-console.log("sono un luogo")
+$(places[i]).addClass("hypertextanimation")
 })
 
 
@@ -71,11 +67,11 @@ console.log("sono un luogo")
 let famous = $(".famous-link");
 
   famous.click(function() {
-  i = Math.floor(Math.random() * famous.length ) 
+  i = Math.floor(Math.random() * famous.length )
   $('html, body').animate({
-  scrollTop: famous[i]
+  scrollTop: $(famous[i]).offset().top
 })
-console.log("sono famosa")
+$(famous[i]).addClass("hypertextanimation")
 })
 
 
@@ -83,9 +79,9 @@ console.log("sono famosa")
 let betrayal = $(".betrayal-link");
 
   betrayal.click(function() {
-  i = Math.floor(Math.random() * betrayal.length ) 
+  i = Math.floor(Math.random() * betrayal.length )
   $('html, body').animate({
-  scrollTop: betrayal[i]
+  scrollTop: $(betrayal[i]).offset().top
 })
-console.log("sono cornuta")
+$(betrayal[i]).addClass("hypertextanimation")
 })

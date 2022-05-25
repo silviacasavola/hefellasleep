@@ -55,7 +55,11 @@
 }
 
 
+
+
+
 /* GLOBAL */
+
 .button a {color: white;}
 
 .filter {
@@ -119,8 +123,6 @@
       -webkit-animation: blur 3s linear forwards;
       -moz-animation: blur 3s linear forwards;
       animation: blur 3s linear forwards;
-      /* animation-play-state: paused;
-      animation-direction: reverse; */
   }
 
 
@@ -145,6 +147,24 @@
   100% { filter:blur(0px); }
   }
 
+
+/* HYPERTEXT ANIMATION */
+.hypertextanimation {
+  -webkit-animation: hypertextanimation 1s linear forwards;
+  animation: hypertextanimation 1s forwards;
+  }
+
+@keyframes hypertextanimation {
+  0% { color:#212529;
+    text-shadow:0px 0px 6px var(--threadlink)
+  }
+  50% { color: white;
+    text-shadow:0px 0px 20px var(--threadlink)
+  }
+  100% { color:#212529;
+    text-shadow:0px 0px 6px var(--threadlink) 
+  }
+}
 
 
 /* MOBILE */
