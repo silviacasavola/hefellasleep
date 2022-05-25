@@ -150,6 +150,7 @@ body:hover img {
     overflow: hidden;
     font-family: 'Archivo', sans-serif;
     text-transform: uppercase;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 80%, rgba(203,218,255,1) 100%);
   }
 
   .animation-container {
@@ -160,6 +161,7 @@ body:hover img {
     right: 0;
     bottom: 0;
     z-index: 1;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 80%, rgba(203,218,255,1) 100%);
   }
 
   .animation-container span {

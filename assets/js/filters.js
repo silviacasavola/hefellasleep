@@ -12,9 +12,11 @@ filteropen = false;
 }
 });
 
+
+
+// FAMOUS
 document.getElementById('famous-filter').addEventListener('click', displayFamous);
 document.getElementById('famous-filter').addEventListener('touchstart', displayFamous);
-
 
 function displayFamous() {
 $(".dream").css("display", "none");
@@ -22,18 +24,20 @@ $(".famous-text").css("display", "block");
 $(".filter-link").removeClass("filter-active");
 $("#famous-filter").addClass("filter-active");
 
-scrolltotop();
-}
+scrolltotop(); }
 
+
+// GIULIETTA
 $( "#giulietta-filter" ).click(function() {
 $(".dream").css("display", "none");
 $(".giulietta-text").css("display", "block");
 $(".filter-link").removeClass("filter-active");
 $("#giulietta-filter").addClass("filter-active");
 
-scrolltotop();
-})
+scrolltotop(); })
 
+
+// DEATH
 $( "#death-filter" ).click(function() {
 $(".dream").css("display", "none");
 $(".death-text").css("display", "block");
@@ -43,6 +47,8 @@ $("#death-filter").addClass("filter-active");
 scrolltotop();
 })
 
+
+// BIRTH
 $( "#birth-filter" ).click(function() {
 $(".dream").css("display", "none");
 $(".birth-text").css("display", "block");
@@ -52,6 +58,8 @@ $("#birth-filter").addClass("filter-active");
 scrolltotop();
 })
 
+
+// MOVIES
 $( "#movies-filter" ).click(function() {
 $(".dream").css("display", "none");
 $(".movies-text").css("display", "block");
@@ -61,6 +69,8 @@ $("#movies-filter").addClass("filter-active");
 scrolltotop();
 })
 
+
+// PLACES
 $( "#places-filter" ).click(function() {
 $(".dream").css("display", "none");
 $(".places-text").css("display", "block");
@@ -70,6 +80,8 @@ $("#places-filter").addClass("filter-active");
 scrolltotop();
 })
 
+
+// BETRAYAL
 $( "#betrayal-filter" ).click(function() {
 $(".dream").css("display", "none");
 $(".betrayal-text").css("display", "block");
@@ -79,6 +91,8 @@ $("#betrayal-filter").addClass("filter-active");
 scrolltotop();
 })
 
+
+// RESET
 $( "#reset-filter" ).click(function() {
 $(".dream").css("display", "block");
 $(".filter-link").removeClass("filter-active");
