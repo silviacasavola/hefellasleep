@@ -73,7 +73,7 @@
 
 .filter-link:hover,
 .filter-active {
-  color: white;
+  color: red;
   text-shadow:0px 0px 6px var(--threadlink);
 }
 
@@ -162,7 +162,7 @@
     text-shadow:0px 0px 20px var(--threadlink)
   }
   100% { color:#212529;
-    text-shadow:0px 0px 6px var(--threadlink) 
+    text-shadow:0px 0px 6px var(--threadlink)
   }
 }
 
